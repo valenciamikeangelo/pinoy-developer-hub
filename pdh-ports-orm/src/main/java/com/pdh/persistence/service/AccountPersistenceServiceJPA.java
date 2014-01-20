@@ -22,7 +22,6 @@ public class AccountPersistenceServiceJPA implements AccountPersistenceService {
 	
 	@Autowired
 	private AccountBuilder accountBuilder;
-	
 	@Autowired
 	private AccountRepository accountRepository;
 	
@@ -43,6 +42,14 @@ public class AccountPersistenceServiceJPA implements AccountPersistenceService {
 			throws AccountModificationException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public void setAccountBuilder(AccountBuilder accountBuilder) {
+		this.accountBuilder = accountBuilder;
+	}
+
+	public void setAccountRepository(AccountRepository accountRepository) {
+		this.accountRepository = accountRepository;
 	}
 
 }
